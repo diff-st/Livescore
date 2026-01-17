@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.match {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border-left: 6px solid #ccc;
+}
+
+.match.live {
+  border-color: red;
+}
+
+.match.finished {
+  opacity: 0.6;
+}
+
+.score {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.minute {
+  color: #666;
+}
+
+.event {
+  margin-bottom: 5px;
+}
