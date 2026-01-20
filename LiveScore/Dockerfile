@@ -1,6 +1,6 @@
 FROM python:3.12
 
-WORKDIR /app
+WORKDIR /LiveScore
 COPY . .
 RUN ["pip", "install", "-r", "requirements.txt"]
 

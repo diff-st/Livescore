@@ -3,7 +3,7 @@ import tornado.web
 import tornado.escape
 import signal
 
-from LiveScore.database import DBPool
+from database import DBPool
 
 class APIHandler(tornado.web.RequestHandler):
     def initialize(self, db_pool):

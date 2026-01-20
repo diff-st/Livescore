@@ -6,14 +6,13 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: password
-      MONGO_INITDB_DATABASE: users_db
-    networks:
-      - apinet
     volumes:
       - mongodb_data:/data/db
+    networks:
+      - apinet
 
-  apirest:
-    build: docker
+  livescore:
+    build: .
     ports:
       - 0.0.0.0:8888:8888
     depends_on:
@@ -23,8 +22,7 @@ services:
       MONGO_PORT: 27017
       MONGO_USER: admin
       MONGO_PASSWORD: password
-      MONGO_DB: users_db
-      MONGO_DB_COLLECTION: users
+      MONGO_DB: rugby_live
     networks:
       - apinet
 
@@ -34,4 +32,3 @@ networks:
 
 volumes:
   mongodb_data:
-

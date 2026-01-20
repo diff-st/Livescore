@@ -1,5 +1,5 @@
 from pymongo import AsyncMongoClient
-from .db_interface import DatabaseInterface
+from db_interface import DatabaseInterface
 
 MONGO_URL = "mongodb://localhost:27017"
 DB_NAME = "rugby_live"
