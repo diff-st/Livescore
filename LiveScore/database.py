@@ -27,7 +27,7 @@ class DBPool:
         if self.client:
             self.client.close()
 
-    # ---------- MATCHES ----------
+    # MATCHES
 
     async def get_matches(self):
         cursor = self.matches.find()
@@ -51,7 +51,7 @@ class DBPool:
             {"$set": data}
         )
 
-    # ---------- EVENTS ----------
+    # EVENTS
 
     async def add_event(self, match_id, event):
         event["match_id"] = ObjectId(match_id)

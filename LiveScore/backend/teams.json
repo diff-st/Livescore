@@ -1,0 +1,8 @@
+[
+  {"code": "NZ", "name": "All Blacks", "color": "black"},
+  {"code": "SA", "name": "Springboks", "color": "green"},
+  {"code": "ENG", "name": "England", "color": "white"},
+  {"code": "FRA", "name": "France", "color": "blue"},
+  {"code": "ITA", "name": "Italy", "color": "blue"},
+  {"code": "AUS", "name": "Wallabies", "color": "gold"}
+]
